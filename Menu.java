@@ -4,6 +4,8 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Menu {
+	public static final Scanner scanner = new Scanner(System.in);
+
 	private String title;
 	private List<String> options;
 
@@ -27,8 +29,7 @@ public class Menu {
 			}
 
 			System.out.println("Informe a opcao desejada. ");
-			Scanner s = new Scanner(System.in);
-			String str = s.nextLine();
+			String str = scanner.nextLine();
 			try {
 				op = Integer.parseInt(str);
 			}
