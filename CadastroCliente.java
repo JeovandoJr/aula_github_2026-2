@@ -56,7 +56,7 @@ public class CadastroCliente {
 	}
 
 	private boolean cpfValido(String cpf) {
-		return cpf.matches("\d{11}");
+		return cpf.matches("\\d{11}");
 	}
 
 	private String lerCampo(String rotulo) {
